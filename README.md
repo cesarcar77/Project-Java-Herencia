@@ -19,4 +19,7 @@ Salida de Ejecución
 
 A continuación, se presenta una captura de la ejecución del programa, donde se evidencia la correcta instanciación de cada componente y la invocación tanto de los métodos heredados como de los particulares.
 
+<img width="983" height="641" alt="image" src="https://github.com/user-attachments/assets/7792335b-7751-441a-81a9-9a316a47fe3f" />
+
+
 ![alt text](image.png)
