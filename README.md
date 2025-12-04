@@ -1,18 +1,22 @@
-## Getting Started
+Project-Java-Herencia: Componentes Vehiculares
+Este proyecto demuestra la aplicación del concepto de Herencia en Java mediante la construcción de una jerarquía de clases para modelar diversos componentes de un vehículo.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Jerarquía de Clases
+Se define una clase base (ComponenteVehicular) que establece los atributos y el comportamiento común, y varias subclases que heredan de ella, especializando su funcionalidad y añadiendo métodos únicos.
+Clase Base:
+ComponenteVehicular: Define codigo y fabricante, y el método mostrarInformacion().
 
-## Folder Structure
+Clases Derivadas (Subclases):
+Motor: Atributos (cilindros, potencia). Comportamiento: encenderMotor().
+Transmision: Atributos (tipo, marchas). Comportamiento: cambiarMarcha(int).
+Neumatico: Atributos (tamaño, presion). Comportamiento: verificarPresion().
+Chasis: Atributos (tipo, peso). Comportamiento: calcularCargaMaxima().
+SistemaFrenos: Atributos (tieneABS, tipoDiscos). Comportamiento: verificarABS().
 
-The workspace contains two folders by default, where:
+Cada subclase sobrescribe el método mostrarInformacion()para incluir sus detalles específicos.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Salida de Ejecución
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+A continuación, se presenta una captura de la ejecución del programa, donde se evidencia la correcta instanciación de cada componente y la invocación tanto de los métodos heredados como de los particulares.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![alt text](image.png)
